@@ -3,7 +3,11 @@
 </div>
 
 <h3>This cat's toys are...</h3>
+<div class="well"
+  <ul>
+    <% @cat.toys.each do |toy| %>
 
-<div class="well">
-  <em>Replace this with a list of the toys that belong to this cat</em>
+    <li> <%= toy.name %></li>
+    <%  end %>
+  </ul>
 </div>
